@@ -174,8 +174,18 @@ p.copyright {
         font-size: 27px;
         padding: 10px;
     }
-    
+
 .bigicon {
         font-size: 35px;
         color: #36A0FF;
     }
+
+  #contactForm label.error {
+    color: #FB3A3A;
+    display: inline-block;
+    margin: 4px 0 5px 125px;
+    padding: 0;
+    text-align: left;
+    width: 220px;
+}
+
