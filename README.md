@@ -1,4 +1,10 @@
 
-## CREDITS 
+## LINK:
 
-https://github.com/davidtmiller
+http://develovers.xyz
+
+## Source 
+
+http://startbootstrap.com/template-overviews/landing-page/
+
+
