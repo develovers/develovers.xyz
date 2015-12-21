@@ -28,15 +28,15 @@
                 },
                 messages: {
                     fname: "Escriba su nombre",
-                    lname: "Escriba sus Apellidos",
+                    lname: "Escriba sus apellidos",
                     phone: {
                         required: "Escriba su contacto telefónico",
-                        minlength: "Escriba un número valido"
+                        minlength: "Escriba un número válido"
                     },
-                    email: "Escriba un correo valido",
+                    email: "Escriba un correo válido",
                     message: {
                         required: "Escriba su mensaje",
-                        minlength: "Escriba un mensaje valida"
+                        minlength: "Escriba un mensaje válido"
                     } 
                 },
                 submitHandler: function(form) {
@@ -46,7 +46,7 @@
                     var email = $('#email').val();
                     var message = $('#message').val();
 
-                    var send_message = "<br/>Nombre: "+name + " "+ surname + "<br/>Correo: "+email +"<br/>Telefono: "+phone+"<br/>Mensaje: "+message + "<br/>";
+                    var send_message = "<br/>Nombre: " + name + " " + surname + "<br/>Correo: " + email + "<br/>Teléfono: " + phone + "<br/>Mensaje: " + message + "<br/>";
                     
                      $.ajax({
                                 type: "POST",
@@ -62,13 +62,13 @@
                                         'type': 'to'
                                       }
                                     ],
-                                    'subject': "Mensaje para Develovers " + new Date(),
+                                    'subject': "[develovers.xyz] - Mensaje " + name + " " + surname,
                                     'html': send_message
                                   }
                                 }
                               });
                    
-                    $('#formBoxSuccess').html("Mensajen enviada. Muchas Gracias ... ").show();
+                    $('#formBoxSuccess').html("Mensaje enviado. ¡Muchas gracias!").show();
 
                     $('#contactForm').trigger("reset");
                 }
